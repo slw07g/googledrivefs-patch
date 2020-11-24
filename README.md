@@ -7,6 +7,7 @@ sudo kextload "/Applications/Google Drive File Stream.app/Contents/MacOS/dfsfuse
 ```
 
 Update (2020-11-24):
+
 I upgraded to Big Sur 11.1 Beta and began encountering issues with Google Drive File Stream again. The kext appeared to be the culprit again. To resolve the issues, I ran the first command mentioneda above:
 ```
 sudo kextload "/Applications/Google Drive File Stream.app/Contents/MacOS/dfsfuse.kext"
