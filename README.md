@@ -14,4 +14,4 @@ sudo kextload "/Applications/Google Drive File Stream.app/Contents/MacOS/dfsfuse
 ```
 I was then presented with a prompt indicating I needed to approve the kext in Settings >> Security & Privacy >> General tab. After approving, I had to reboot. You would think Google Drive FS would start fine this time, but I needed to run the `kextload` command again and the quit and relaunch Google Drive FS. It appeared to work fine now.
 
-It's possible that the kextload may be required at each boot until google fixes Google Drive. I suspect it might have to do with changing the kext's bundle ID from `com.google.dfsfuse.filesystems.dfsfuse` to `com.google.drivefs.filesystems.dfsfuse`. 
+It's possible that the kextload may be required at each boot until google fixes Google Drive. I suspect it might have to do with changing the kext's bundle ID from `com.google.dfsfuse.filesystems.dfsfuse` to `com.google.drivefs.filesystems.dfsfuse`. Apparently, this has been a problem in the past as noted [here](https://discussions.apple.com/thread/250254816?answerId=250729920022#250729920022). 
